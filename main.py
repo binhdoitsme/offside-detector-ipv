@@ -44,7 +44,7 @@ def main():
     player_detector = PlayerDetector()
     classifier = PlayerClassifier()
 
-    for filename in ["42.jpg", "37.jpg", "18.jpg"]:
+    for filename in ["14.jpg", "42.jpg", "37.jpg", "18.jpg"]:
         img = cv2.imread(os.path.join(base_folder, filename))
         vp = get_field_vp(img)
         players = player_detector.detect_with_yolo(img)
